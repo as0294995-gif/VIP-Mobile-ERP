@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VIP Mobile ERP | المبيعات</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="../css/sales.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>VIP ERP</h2>
+
+<p>Mobile Store</p>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-table-columns"></i>
+
+<span>لوحة التحكم</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="products.html">
+
+<i class="fa-solid fa-mobile-screen-button"></i>
+
+<span>المنتجات</span>
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="sales.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span>المبيعات</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="customers.html">
+
+<i class="fa-solid fa-users"></i>
+
+<span>العملاء</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="reports.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<span>التقارير</span>
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<div class="topbar">
+
+<h1>
+
+شاشة الكاشير
+
+</h1>
+
+</div>
+
+<div class="search-area">
+
+<input
+
+type="text"
+
+id="barcode"
+
+placeholder="امسح الباركود أو اكتب اسم المنتج أو IMEI">
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+بحث
+
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>المنتج</th>
+
+<th>الكمية</th>
+
+<th>السعر</th>
+
+<th>الإجمالي</th>
+
+<th>حذف</th>
+
+</tr>
+
+</thead>
+
+<tbody id="salesTable">
+
+<tr>
+
+<td>iPhone 15 Pro Max</td>
+
+<td>
+
+<input type="number" value="1" min="1">
+
+</td>
+
+<td>69000</td>
+
+<td>69000</td>
+
+<td>
+
+<button class="delete-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="invoice-box">
+
+<div class="row">
+
+<span>الإجمالي</span>
+
+<strong id="totalPrice">69000 جنيه</strong>
+
+</div>
+
+<div class="row">
+
+<span>الخصم</span>
+
+<input type="number" id="discount" value="0">
+
+</div>
+
+<div class="row">
+
+<span>المدفوع</span>
+
+<input type="number" id="paid" value="0">
+
+</div>
+
+<div class="row">
+
+<span>الباقي</span>
+
+<strong id="remaining">0 جنيه</strong>
+
+</div>
+
+<div
