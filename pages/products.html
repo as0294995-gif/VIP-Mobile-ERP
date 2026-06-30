@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VIP Mobile ERP | إدارة المنتجات</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="../css/products.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>VIP ERP</h2>
+
+<p>Mobile Store</p>
+
+</div>
+
+<ul>
+
+<li>
+<a href="dashboard.html">
+<i class="fa-solid fa-table-columns"></i>
+<span>لوحة التحكم</span>
+</a>
+</li>
+
+<li class="active">
+<a href="products.html">
+<i class="fa-solid fa-mobile-screen-button"></i>
+<span>المنتجات</span>
+</a>
+</li>
+
+<li>
+<a href="sales.html">
+<i class="fa-solid fa-cart-shopping"></i>
+<span>المبيعات</span>
+</a>
+</li>
+
+<li>
+<a href="customers.html">
+<i class="fa-solid fa-users"></i>
+<span>العملاء</span>
+</a>
+</li>
+
+<li>
+<a href="suppliers.html">
+<i class="fa-solid fa-building"></i>
+<span>الموردون</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<div class="topbar">
+
+<h1>
+
+إدارة المنتجات
+
+</h1>
+
+<button class="add-product">
+
+<i class="fa-solid fa-plus"></i>
+
+إضافة منتج
+
+</button>
+
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="search"
+placeholder="ابحث باسم المنتج أو الباركود أو IMEI">
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>الباركود</th>
+
+<th>اسم المنتج</th>
+
+<th>التصنيف</th>
+
+<th>سعر الشراء</th>
+
+<th>سعر البيع</th>
+
+<th>الكمية</th>
+
+<th>الإجراءات</th>
+
+</tr>
+
+</thead>
+
+<tbody id="productsTable">
+
+<tr>
+
+<td>100001</td>
+
+<td>iPhone 15 Pro Max</td>
+
+<td>موبايل</td>
+
+<td>65000</td>
+
+<td>69000</td>
+
+<td>3</td>
+
+<td>
+
+<button class="edit-btn">
+
+<i class="fa-solid fa-pen"></i>
+
+</button>
+
+<button class="delete-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>200001</td>
+
+<td>شاحن 25W Samsung</td>
+
+<td>إكسسوار</td>
+
+<td>250</td>
+
+<td>350</td>
+
+<td>18</td>
+
+<td>
+
+<button class="edit-btn">
+
+<i class="fa-solid fa-pen"></i>
+
+</button>
+
+<button class="delete-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="product-modal">
+
+<div class="modal-content">
+
+<h2>
+
+إضافة منتج جديد
+
+</h2>
+
+<input type="text" placeholder="اسم المنتج">
+
+<input type="text" placeholder="الباركود أو IMEI">
+
+<input type="text" placeholder="التصنيف">
+
+<input type="number" placeholder="سعر الشراء">
+
+<input type="number" placeholder="سعر البيع">
+
+<input type="number" placeholder="الكمية">
+
+<button class="save-btn">
+
+حفظ المنتج
+
+</button>
+
+</div>
+
+</div>
+
+<script src="../js/products.js"></script>
+
+</body>
+
+</
