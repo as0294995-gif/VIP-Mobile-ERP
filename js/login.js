@@ -1,33 +1,184 @@
-document.addEventListener("DOMContentLoaded", () => {
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-const form = document.getElementById("loginForm");
+<head>
 
-form.addEventListener("submit", function(e){
+<meta charset="UTF-8">
 
-e.preventDefault();
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-const username = document.getElementById("username").value.trim();
+<title>VIP Mobile ERP | تسجيل الدخول</title>
 
-const password = document.getElementById("password").value.trim();
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-if(username === "admin" && password === "1234"){
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-localStorage.setItem("vip_login","true");
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-window.location.href = "pages/dashboard.html";
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-}else{
+<link rel="stylesheet" href="css/login.css">
 
-alert("اسم المستخدم أو كلمة المرور غير صحيحة");
+</head>
 
-}
+<body>
 
-});
+<div class="background">
 
-if(localStorage.getItem("vip_login") === "true"){
+<div class="circle circle1"></div>
 
-window.location.href = "pages/dashboard.html";
+<div class="circle circle2"></div>
 
-}
+<div class="circle circle3"></div>
 
-});
+</div>
+
+<div class="login-container">
+
+<div class="left-panel">
+
+<div class="logo">
+
+<h1>VIP Mobile ERP</h1>
+
+<p>
+نظام احترافي لإدارة محلات الموبايلات والإكسسوارات والصيانة والمخزون.
+</p>
+
+</div>
+
+<div class="features">
+
+<div class="feature">
+<i class="fa-solid fa-mobile-screen-button"></i>
+<span>بيع وشراء الموبايلات</span>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+<span>إدارة الصيانة</span>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-boxes-stacked"></i>
+<span>إدارة المخزون</span>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-chart-line"></i>
+<span>تقارير وأرباح لحظية</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="right-panel">
+
+<div class="login-box">
+
+<h2>تسجيل الدخول</h2>
+
+<p>أدخل بيانات الدخول للوصول إلى النظام.</p>
+
+<form id="loginForm">
+
+<div class="input-box">
+
+<i class="fa-solid fa-user"></i>
+
+<input
+type="text"
+id="username"
+placeholder="اسم المستخدم"
+required>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input
+type="password"
+id="password"
+placeholder="كلمة المرور"
+required>
+
+</div>
+
+<div class="options">
+
+<label>
+
+<input type="checkbox">
+
+تذكرني
+
+</label>
+
+<a href="#">
+
+نسيت كلمة المرور؟
+
+</a>
+
+</div>
+
+<button type="submit" class="login-btn">
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+تسجيل الدخول
+
+</button>
+
+</form>
+
+<div class="divider">
+
+<span>أو</span>
+
+</div>
+
+<div class="quick-login">
+
+<button class="google-btn">
+
+<i class="fa-brands fa-google"></i>
+
+Google
+
+</button>
+
+<button class="microsoft-btn">
+
+<i class="fa-brands fa-microsoft"></i>
+
+Microsoft
+
+</button>
+
+</div>
+
+<div class="footer-text">
+
+<p>
+
+VIP Mobile ERP © 2026
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+
+</html>
