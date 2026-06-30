@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VIP Mobile ERP | لوحة التحكم</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>VIP ERP</h2>
+
+<p>Mobile Store</p>
+
+</div>
+
+<ul>
+
+<li class="active">
+<a href="dashboard.html">
+<i class="fa-solid fa-table-columns"></i>
+<span>لوحة التحكم</span>
+</a>
+</li>
+
+<li>
+<a href="products.html">
+<i class="fa-solid fa-mobile-screen-button"></i>
+<span>المنتجات</span>
+</a>
+</li>
+
+<li>
+<a href="sales.html">
+<i class="fa-solid fa-cart-shopping"></i>
+<span>المبيعات</span>
+</a>
+</li>
+
+<li>
+<a href="purchases.html">
+<i class="fa-solid fa-truck"></i>
+<span>المشتريات</span>
+</a>
+</li>
+
+<li>
+<a href="customers.html">
+<i class="fa-solid fa-users"></i>
+<span>العملاء</span>
+</a>
+</li>
+
+<li>
+<a href="suppliers.html">
+<i class="fa-solid fa-building"></i>
+<span>الموردون</span>
+</a>
+</li>
+
+<li>
+<a href="repairs.html">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+<span>الصيانة</span>
+</a>
+</li>
+
+<li>
+<a href="reports.html">
+<i class="fa-solid fa-chart-line"></i>
+<span>التقارير</span>
+</a>
+</li>
+
+<li>
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+<span>الإعدادات</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<header class="topbar">
+
+<div class="welcome">
+
+<h1>
+
+لوحة التحكم
+
+</h1>
+
+<p>
+
+مرحبًا بك في نظام إدارة محل الموبايلات.
+
+</p>
+
+</div>
+
+<div class="profile">
+
+<i class="fa-solid fa-bell"></i>
+
+<div class="user">
+
+<strong>Administrator</strong>
+
+<span>مدير النظام</span>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="cards">
+
+<div class="header">
+
+<div class="search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="ابحث عن جهاز أو عميل أو فاتورة...">
+
+</div>
+
+<div class="user">
+
+<i class="fa-solid fa-bell"></i>
+
+<img
+src="https://i.pravatar.cc/100"
+alt="Admin">
+
+<div>
+
+<h4>مدير النظام</h4>
+
+<span>Administrator</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="page-title">
+
+<h1>
+
+لوحة التحكم
+
+</h1>
+
+<p>
+
+مرحباً بك في نظام VIP Mobile ERP
+
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-mobile-screen-button"></i>
+
+<h2 id="productsCount">
+
+0
+
+</h2>
+
+<span>
+
+عدد المنتجات
+
+</span>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<h2 id="salesCount">
+
+0
+
+</h2>
+
+<span>
+
+إجمالي المبيعات
+
+</span>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h2 id="profits">
+
+0 جنيه
+
+</h2>
+
+<span>
+
+صافي الأرباح
+
+</span>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+<h2 id="repairs">
+
+0
+
+</h2>
+
+<span>
+
+طلبات الصيانة
+
+</span>
+
+</div>
+
+</div>
+
+<div class="left-section">
+
+<div class="chart-card">
+
+<h3>
+
+إحصائيات المبيعات
+
+</h3>
+
+<canvas id="salesChart"></canvas>
+
+</div>
+
+</div>
+
+<div class="right-section">
+
+<div class="activity-card">
+
+<h3>
+
+آخر العمليات
+
+</h3>
+
+<ul class="activity-list">
+
+<li>
+
+<i class="fa-solid fa-circle-check"></i>
+
+تم بيع iPhone 15 Pro
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-circle-check"></i>
+
+تم شراء Samsung S24 Ultra
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-circle-check"></i>
+
+إضافة سماعات
